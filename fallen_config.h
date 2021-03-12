@@ -15,9 +15,9 @@ const unsigned int maxLedsPerStrip = 144;
 #define DISABLE_DIAGNOSTIC_COMMANDS // mem save
 // fett configs
 #define FETT263_LOCKUP_DELAY 200
-#define FETT263_STAB_ON
+#define FETT263_STAB_ON_NO_BM
 #define FETT263_SWING_ON_NO_BM
-#define FETT263_TWIST_ON
+#define FETT263_TWIST_ON_NO_BM
 #define FETT263_TWIST_OFF
 // pull in fett config
 #ifdef CONFIG_PROP
