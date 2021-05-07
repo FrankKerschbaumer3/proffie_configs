@@ -13,7 +13,7 @@ const unsigned int maxLedsPerStrip = 127;
 #define IDLE_OFF_TIME 60 * 10 * 1000
 #define MOTION_TIMEOUT 60 * 15 * 1000
 #define COLOR_CHANGE_DIRECT
-
+#define DISABLE_DIAGNOSTIC_COMMANDS
 // fett configs
 #define FETT263_LOCKUP_DELAY 200
 #define FETT263_STAB_ON
@@ -265,8 +265,8 @@ Preset presets[] = {
 };
 BladeConfig blades[] = {
     {0,
-        WS281XBladePtr<127, bladePin, Color8::GRB, PowerPINS<bladePowerPin4, bladePowerPin5>>(),
-        WS2811BladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin6>>(),
+        WS281XBladePtr<127, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+        WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),
         CONFIGARRAY(presets)
     },
 };
